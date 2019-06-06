@@ -2,7 +2,7 @@
 
 function daysInYear(year) { 
 
-  if (typeof year === 'number' && Number.isInteger(year)) {
+  if (Number.isInteger(year)) {
     return (new Date(year, 11, 31) - new Date(year, 0, 0))/(1000*60*60*24);
       } else { 
         throw new Error (`Invalid data`); 
